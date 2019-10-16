@@ -1,2 +1,4 @@
-FROM httpd:2.4
-COPY ./src/ /usr/local/apache2/htdocs/
+FROM nginx
+
+COPY ./src /usr/share/nginx/html/
+

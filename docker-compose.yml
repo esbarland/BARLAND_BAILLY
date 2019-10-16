@@ -4,7 +4,6 @@ services:
   #reverse proxy
   reverse-proxy:
     build: reverse-proxy/
-    restart: always
     ports:
      - 8080:80
     links:
@@ -52,6 +51,7 @@ services:
   #site B
   siteb:
     build: siteB/
+ 
 
   #load balancer
   sitec:
